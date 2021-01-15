@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-body {
+@mixin box_sizing{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#im{
     background: url('flight.jpg') no-repeat center center;
     background-size: cover;
     height: 600px}
@@ -43,4 +48,44 @@ footer ul li{
     margin-left: 15px solid #a74a96 ;
     font-size: 2em;
     font-weight: #23735f;
+}
+aside{
+    section.user_info {
+        margin-top: 20px;
+    }
+section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+        border: 0;
+        padding-top: 0;
+    }
+    span {
+        display: block;
+        margin-bottom: 3px;
+        line-height: 1;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: left;
+        letter-spacing: -1px;
+    }
+    }
+}
+.gravatar {
+    float: left;
+    margin-right: 10px;
+}
+.gravatar_edit{
+    margin-top: 15px;
+}
+/* form */
+input, textarea, select, .uneditable-input {
+ border: 1px solid #80121f;
+ width: 100%;
+ margin-bottom: 10px;
+@include box_sizing;
+}
+input{
+    height: auto !important;
 }
