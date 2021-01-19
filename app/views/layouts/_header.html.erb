@@ -2,7 +2,11 @@
   <div class="container">
   <nav>
   <ul class="nav navbar-nav navbar-right">
-  <li><%= link_to "ABOUT",root_path %></li>
+  <li><%= link_to "ABOUT",aboutpage_path %></li>
+  <% if logged_in? %>
+  <li><%= link_to "LOG OUT",logout_path, method: :delete %></li>
+  <% end %>
+
   </ul>
   </nav>
   </div>

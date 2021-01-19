@@ -10,4 +10,8 @@ class StaticpagesControllerTest < ActionDispatch::IntegrationTest
     get help_path
     assert_response :success
   end
+  test "should get aboutpage" do
+    get aboutpage_path
+    assert_response :success
+  end
 end

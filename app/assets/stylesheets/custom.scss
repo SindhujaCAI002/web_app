@@ -8,7 +8,7 @@
 #im{
     background: url('flight.jpg') no-repeat center center;
     background-size: cover;
-    height: 600px}
+    height: 500px}
     
 body {
   padding-top: 60px;
@@ -88,4 +88,11 @@ input, textarea, select, .uneditable-input {
 }
 input{
     height: auto !important;
+}
+
+/*for buttons*/
+#buttonline{
+   width: 100%;
+   text-align: center;
+   
 }

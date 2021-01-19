@@ -1,10 +1,6 @@
-<div class="row">
-<aside class="col-md-4">
-<section class="user_info">
-<h1>
-<%= gravatar_for @user%>
-<%= @user.name %>
-</h1>
-</section>
-</aside>
+<p>Hi, Welcome <%= @user.name %> Book your favourite flights here!!</p>
+<div id="buttonline">
+<%= link_to "BOOKING", "#" , class: "btn btn-lg btn-primary" %>
+<%= link_to "CANCEL", "#", class: "btn btn-lg btn-primary" %>
+<%= link_to "HISTORY", "#" , class: "btn btn-lg btn-primary" %>
 </div>
