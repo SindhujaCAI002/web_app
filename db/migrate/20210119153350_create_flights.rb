@@ -1,7 +1,7 @@
 class CreateFlights < ActiveRecord::Migration[6.1]
   def change
     create_table :flights do |t|
-      t.integer :flight_id , null: false, primary_key: true
+      t.integer :flight_code , unique: true
       t.date :date
       t.string :start
       t.string :destination

@@ -1,6 +1,12 @@
+ <% if current_user.admin? %>>
+ <div id>
+    <%= link_to "Flight listing", list_path , class: "btn btn-lg btn-primary" %>
+</div>
+    <% else %>
 <p>Hi, Welcome <%= @user.name %> Book your favourite flights here!!</p>
 <div id="buttonline">
 <%= link_to "BOOKING", "#" , class: "btn btn-lg btn-primary" %>
 <%= link_to "CANCEL", "#", class: "btn btn-lg btn-primary" %>
 <%= link_to "HISTORY", "#" , class: "btn btn-lg btn-primary" %>
+<% end %>
 </div>

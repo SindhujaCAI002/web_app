@@ -1,2 +1,23 @@
-<h1>Flights#listing</h1>
-<p>Find me in app/views/flights/listing.html.erb</p>
+<h1>List Update</h1>
+
+<div class="row">
+ <div class="col-md-6 col-md-offset-3">
+ <%= form_with(model: @flight, local: true) do |f| %>
+  <%= f.label :flight_code %>
+  <%= f.text_field :flight_code %>
+
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+
+  <%= f.label :starting_place %>
+  <%= f.text_field :start %>
+
+  <%= f.label :destination %>
+  <%= f.text_field :destination %>
+
+   <%= f.label :seats %>
+   <%= f.text_field :seats_avail %>
+  <%= f.submit "Upload", class: "btn btn-primary" %>
+  <% end %>
+  </div>
+  </div>
