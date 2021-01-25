@@ -1,0 +1,19 @@
+<table >
+ <% @s.each do |b| %>
+<tr>
+<td><%= b.user_id %></td>
+<td><%= b.flight_id %></td>
+<td><%= b.bookstatus %></td>
+</tr>
+<% end %>
+</table>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<%= form_with(model: @booking, local: true) do |f| %>
+<%= f.label :flight_id %>
+<%= f.text_field :flight_id %>
+<%= f.submit "cancel", class: "btn btn-primary" %>
+<% end %>
+</div>
+</div>

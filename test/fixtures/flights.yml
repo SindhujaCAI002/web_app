@@ -1,15 +1,18 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  flight_code: 1
-  date: 2021-01-19
-  start: MyString
-  destination: MyString
-  seats_avail: 1
 
-two:
-  flight_code: 1
-  date: 2021-01-19
-  start: MyString
-  destination: MyString
-  seats_avail: 1
+ one:
+   flight_code: 1
+   date: 2021-02-19
+   start: Chenn
+   destination: Mumb
+   seats_avail: 10
+  
+ two:
+   flight_code: 2
+   date: 2021-01-19
+   start: Mumbai
+   destination: Chennai
+   seats_avail: 100
+
+ 

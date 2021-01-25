@@ -19,6 +19,6 @@ end
 test "email address should be unique" do
   same_user = @user.dup
   @user.save
-  assert same_user.valid?
+  assert_not same_user.valid?
 end
 end
